@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation= "vertical"
+    android:gravity = "center"
+    tools:context="com.example.cmghim.myapplication.reservation">
+
+    <TextView
+        android:id = "@+id/reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "reservation"
+        android:textSize="30dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <DatePicker
+    android:id="@+id/res_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:datePickerMode="spinner"
+    android:calendarViewShown="false">
+</DatePicker>
+
+    <TimePicker
+        android:id = "@+id/res_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"></TimePicker>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reservation check?"
+        android:onClick="reservation_Clicked"/>
+
+</LinearLayout>

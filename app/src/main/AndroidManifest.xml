@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cmghim.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".myapp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Restaurant Management System"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".allfood_files.allmenu" />
+        <activity android:name=".Recommended_menu" />
+        <activity android:name=".reservation" />
+        <activity android:name=".centeractivity" />
+        <activity android:name=".selectgroup" />
+        <activity android:name=".allfood_files.make_GroupId" />
+        <activity android:name=".allmenu" />
+        <activity android:name=".order" />
+        <activity android:name=".poll" />
+        <activity android:name=".GroupId" />
+        <activity android:name=".fin" />
+        <activity
+            android:name=".popup_act.popup_order"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".popup_act.popup_recomorder"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".reservation_check" />
+        <activity
+            android:name=".popup_act.popup_reservation"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".popup_act.popup_poll"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".chef" />
+        <activity
+            android:name=".popup_act.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".popup_act.popup_addid"
+                  android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
